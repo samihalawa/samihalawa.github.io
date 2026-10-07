@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestión de gastos, dietas, kilometraje y anticipos de caja · Prototipo expte. 2026/090</title>
+<meta name="description" content="Prototipo funcional de sistema de gestión de indemnizaciones por razón del servicio y anticipos de caja (expediente 2026/090, Andalucía Emprende). Datos ficticios.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  <div class="brand"><img src="assets/icon.svg" alt="" width="28" height="28"><span>Gastos<span class="muted">·</span>Indemnizaciones</span></div>
+  <div class="who">
+    <label for="roleSel" class="sr">Ver como</label>
+    <select id="roleSel" title="Cambiar de usuario (demo)"></select>
+    <button id="notifBtn" class="icon-btn" aria-label="Notificaciones">🔔<span id="notifCount" class="badge hidden">0</span></button>
+  </div>
+</header>
+<div class="banner">Prototipo funcional · Expte. 2026/090 · <strong>Datos ficticios</strong> guardados solo en este navegador · <a href="#acerca">Acerca de</a></div>
+<div class="layout">
+  <nav id="sidenav" class="sidenav" aria-label="Navegación principal"></nav>
+  <main id="view" class="view" tabindex="-1"></main>
+</div>
+<div id="notifPanel" class="notif-panel hidden" role="dialog" aria-label="Notificaciones"></div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="assets/tique-ejemplo.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
